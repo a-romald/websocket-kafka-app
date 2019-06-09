@@ -36,8 +36,7 @@ Installation:
 
 Software Installation:
 
-	Add Node.js PPA. Before installing the latest version of Node.js, you must add its PPA to Ubuntu… This repository is provided by 
-the official package mainterner… To add the repository, run the commands below…:
+	Add Node.js PPA. Before installing the latest version of Node.js, you must add its PPA to Ubuntu… This repository is provided by the official package mainterner… To add the repository, run the commands below…:
 
 	sudo apt install curl
 
