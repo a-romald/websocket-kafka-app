@@ -1,5 +1,5 @@
-var http = require('http');
-var Static = require('node-static');
+const http = require('http');
+const Static = require('node-static');
 const kafka = require('kafka-node');
 const WebSocketServer = new require('ws');
 
@@ -89,7 +89,7 @@ webSocketServer.on('connection', function(ws, req) {
 
 
 // Basic http-server (static) on port 8080
-var fileServer = new Static.Server('.');
+const fileServer = new Static.Server('.');
 http.createServer(function (req, res) {
   
   fileServer.serve(req, res);

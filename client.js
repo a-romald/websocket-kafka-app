@@ -26,13 +26,13 @@ document.forms.publish.onsubmit = function() {
 
 // incoming from websocket server messages handler
 socket.onmessage = function(event) {
-  var incomingMessage = event.data;
+  let incomingMessage = event.data;
   showMessage(incomingMessage); 
 };
 
 // show message in div#subscribe
 function showMessage(message) {
-  var messageElem = document.createElement('div');
+  let messageElem = document.createElement('div');
   messageElem.appendChild(document.createTextNode(message));
   document.getElementById('subscribe').appendChild(messageElem);
 }
