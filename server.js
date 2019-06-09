@@ -33,7 +33,7 @@ const webSocketServer = new WebSocketServer.Server({
 
 webSocketServer.on('connection', function(ws, req) {
 
-  let user_id = req.url.replace('/?token=', '')  
+  let user_id = req.url.replace('/?token=', '')
   console.log('User_id: ' + user_id);
   clients[user_id] = ws;
 
